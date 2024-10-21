@@ -1,0 +1,62 @@
+#home {
+  background: url(../assets/svgs/red-backgroundsvg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.name-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.name-container h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: 'HurmeBlack';
+  font-size: 38px;
+}
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  background-color: rgba(240, 255, 255, 0.815);
+  padding: 10px;
+  border-radius: 5%;
+  gap: 20px;
+}
+.quote-container h3 {
+  text-align: end;
+  font-family: 'HurmeItalic';
+}
+.quote {
+  font-family: 'HurmeItalic';
+}
+
+.start-button button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  font-family: 'Hurme';
+}
+
+@media screen and (min-width: 768px) {
+  .name-container h1 {
+    font-size: 95px;
+  }
+  .quote-container {
+    border-radius: 15px;
+    padding-inline: 30px;
+    padding-block: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .home-container {
+    max-width: 1440px;
+    padding-inline: 10rem;
+    margin-top: 5rem;
+  }
+}

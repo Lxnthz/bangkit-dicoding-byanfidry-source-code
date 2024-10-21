@@ -1,0 +1,11 @@
+footer {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    display: block;
+    transform: translateY(50rem);
+    background: transparent;
+  }  
+}

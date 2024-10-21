@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script defer src="./scripts/index.js"></script>
+</head>
+<body>
+
+  <header>
+    <div id="hamburger" class="hamburger" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+
+  <!-- Mobile Navigation Menu -->
+    <nav id="mobile-menu" class="mobile-menu">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+            <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+  <!-- Desktop Navigation Menu -->
+    <nav id="desktop-menu" class="desktop-nav">
+        <ul>
+            <li><a href="#" onclick="showSection('home')">Home</a></li>
+            <li><a href="#" onclick="showSection('about')">About</a></li>
+            <li><a href="#" onclick="showSection('experience')">Experience</a></li>
+            <li><a href="#" onclick="showSection('skills')">Skills</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+  </header>
+
+<!-- Sections -->
+  <main>
+    <section id="home" class="section active">
+      <div class="home-container">
+        <div class="name-container">
+          <h1>
+            <span>ABYAN</span>
+            <span>FIDRIYANSYAH</span>
+          </h1>
+          <h2>Full Stack Developer</h2>
+        </div>
+        <div class="quote-container">
+          <p class="quote">
+            “You have brains in your head. You have feet in your shoes. You can steer yourself any direction you choose. You're on your own. And you know what you know. And you are the guy who'll decide where to go."
+          </p>
+          <p>-- Dr Seuss</p>
+        </div>
+        <div class="start-button">
+          <button onclick="showSection('about')">Get Started</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="about-me-container">
+          <h2>Get to Know About Me</h2>
+          <div class="about-me-content">
+            <aside class="potrait">
+              <img src="./assets/pngs/potrait.png" alt="potrait">
+            </aside>
+            <article class="about-me-article">
+              <h4 class="article-name">I'M <span class="first-name">ABYAN</span> FIDRIYANSYAH</h4>
+              <p class="article-paragraph">
+                Dedicated and ambitious undergraduate student with a passion for 
+                continuous learning and personal growth. Currently pursuing a bachelor's 
+                degree in computer science at IPB University. Passionate about exploring the 
+                vast possibilities of technology, I am committed to honing my skills and 
+                staying abreast of the latest advancements in the field.
+              </p>
+              <p class="article-lower-text">
+                Currently focusing on a full stack developer career path.
+              </p>
+            </article>
+          </div>
+          <div class="education-container">
+            <h2>Education</h2>
+            <div class="education-content">
+              <div class="education-sma">
+                <img src="./assets/svgs/sman16.svg" alt="">
+                <p>SMA Negeri 16 Bekasi</p>
+              </div>
+              <div class="education-college">
+                <img src="./assets/svgs/ipb.svg" alt="">
+                <p>IPB University</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <section id="experience" class="section ">
+      <div class="experience-container">
+        <h2>Experience</h2>
+        <div class="exp-container">
+          <div class="experience-content">
+            <aside class="exp-content-img">
+              <img src="./assets/pngs/himalkom.png" alt="">
+            </aside>
+            <h2>Himalkom Website</h2>
+            <p>The Himalkom Website is a platform developed by the Research and Technology team, designed specifically to serve as a comprehensive hub for all activities related to computer science students. It acts as a centralized resource, housing everything from events and projects to important announcements, ensuring that the digital presence of the computer science community is organized and accessible.</p>
+          </div>
+
+          <div class="experience-content">
+            <aside class="exp-content-img">
+              <img src="./assets/pngs/votelinker.png" alt="">
+            </aside>
+            <h2>VoteLinker</h2>
+            <p>VoteLinker is an online voting website for IPB created to fulfill the final assignment of the Rekayasa Perangkat Lunak course. The idea for VoteLinker arose after observing the shortcomings of the previous offline voting system where students had to physically attend to cast their votes.</p>
+          </div>
+
+          <div class="experience-content">
+            <aside class="exp-content-img">
+              <img src="./assets/pngs/binary.png" alt="">
+            </aside>
+            <h2>BinaryBoutique</h2>
+            <p>BinaryBoutique is a website built to fulfill the final assignment of the Basis Data course. The idea behind creating this website stemmed from the difficulty people face in finding places to learn programming. For this project, we used HTML, CSS, and JavaScript, which are the most fundamental languages for building website interfaces, and Django for backend development.</p>
+          </div>
+
+          <div class="experience-content">
+            <aside class="exp-content-img">
+              <img src="./assets/pngs/tedxipb.png" alt="">
+            </aside>
+            <h2>TEDxIPB Landing Page</h2>
+            <p>The TEDxIPB Landing Page was developed for the TEDxIPB 2024 event, serving as a key platform to promote and brand TEDxIPB. It functions as a central hub where users can register as volunteers and purchase tickets for the event, making it an essential part of the event’s online presence.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section ">
+      <h2>Skills</h2>
+      <div class="skill">
+        <h3>GitHub</h3>
+        <div class="progress-bar">
+          <div class="progress" data-progress="60"></div>
+        </div>
+      </div>
+    
+      <div class="skill">
+        <h3>React</h3>
+        <div class="progress-bar">
+          <div class="progress" data-progress="70"></div>
+        </div>
+      </div>
+    
+      <div class="skill">
+        <h3>JavaScript</h3>
+        <div class="progress-bar">
+          <div class="progress" data-progress="50"></div>
+        </div>
+      </div>
+    
+      <div class="skill">
+        <h3>HTML</h3>
+        <div class="progress-bar">
+          <div class="progress" data-progress="100"></div>
+        </div>
+      </div>
+    
+      <div class="skill">
+        <h3>CSS</h3>
+        <div class="progress-bar">
+          <div class="progress" data-progress="80"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+          <div class="card">
+              <div class="face face1">
+                  <div class="content">
+                      <div class="icon">
+                          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <h3>
+                          <a href="https://www.linkedin.com/in/byanfidry/" target="_blank">byanfidry</a>
+                      </h3>
+                      <p>This is where I network and build my professional protfolio.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <div class="face face1">
+                  <div class="content">
+                      <div class="icon">
+                          <i class="fa fa-github-square" aria-hidden="true"></i>
+                      </div>
+                  </div>
+              </div>
+              <div class="face face2">
+                  <div class="content">
+                      <h3>
+                          <a href="https://github.com/lxnthz" target="_blank">Lxnthz</a>
+                      </h3>
+                      <p>This is where I share code and work on projects.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Created by Abyan Fidriyansyah</p>
+  </footer>
+</body>
+</html>
