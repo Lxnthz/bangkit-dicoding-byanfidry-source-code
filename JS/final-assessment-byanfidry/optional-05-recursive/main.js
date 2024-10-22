@@ -1,5 +1,5 @@
-import factorial from './factorial.js';
-import fibonacci from './fibonacci.js';
+import factorial from "./factorial.js";
+import fibonacci from "./fibonacci.js";
 
 const numberForFactorial = 5;
 console.log(`Faktorial dari ${numberForFactorial} adalah ${factorial(numberForFactorial)}`);
@@ -12,8 +12,8 @@ const numberForFibonacci = 10;
 const fibSequence = [];
 console.log(`Deret Fibonacci hingga elemen ${numberForFibonacci} adalah:`);
 for (let i = 0; i <= numberForFibonacci; i++) {
-    fibSequence.push(fibonacci(i));
-    console.log(`[ ${fibSequence.join(', ')} ]`);
+  fibSequence.push(fibonacci(i));
+  console.log(`[ ${fibSequence.join(", ")} ]`);
 }
 /**
  * Output yang diharapkan:
@@ -30,4 +30,3 @@ for (let i = 0; i <= numberForFibonacci; i++) {
  * [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34 ]
  * [ 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55 ]
  */
-
